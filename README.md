@@ -24,6 +24,10 @@ remove data files on HDFS
 ```bash
 hdfs dfs -rm -R {table_location}
 ```
+move (overwrite) a file from local to HDFS path
+```bash
+hdfs dfs -put -f {source_location+filename} {target_location+filename}
+```
 check the list of jobs
 ```bash
 yarn application -list
@@ -40,4 +44,17 @@ yarn logs -applicationId {Application-Id}
 kill a job
 ```bash
 yarn application -kill {Application-Id}
+```
+
+## General Linux Bash
+check running process
+```bash
+ps
+```
+check running process with more info
+```bash
+ps aux
+# a option outpus all running processes of all users in the system. 
+# u option provides additional information like memory and CPU usage percentage, the process state code, and the owner of the processes. 
+# x option lists all processes not executed from the terminal. A perfect example of this are daemons, which are system-related processes that run in the background when the system is booted up. 
 ```
