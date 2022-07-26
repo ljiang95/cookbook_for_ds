@@ -51,6 +51,16 @@ kill a job
 ```bash
 yarn application -kill {Application-Id}
 ```
+### Hive Commands
+create a schema
+```hiveql
+create database {schema_name}
+```
+create a schema with tentative location
+```hiveql
+create database {schema_name} {schema_location}
+```
+
 
 ## General Linux Bash
 check running process
