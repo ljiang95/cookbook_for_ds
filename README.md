@@ -5,6 +5,7 @@ submit job via an HQL file
 ```bash
 nohup hive -f query.hql > query.log &
 # 'nohup' is a command that ignores the HUP signal. If we want to continue running the process even after logout or disconnection from the current shell, we can use nohup command. 
+# '>': If the file exists, it will be replaced. '>>': If the file does not exist, it will be created. If it exists, It will be appended to the end of the file. 
 # '&' makes the command run in the background.  
 ```
 submit job via an HQL file in order to pull the data
