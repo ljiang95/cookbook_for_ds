@@ -28,6 +28,12 @@ move (overwrite) a file from local to HDFS path
 ```bash
 hdfs dfs -put -f {source_location+filename} {target_location+filename}
 ```
+change the permission of an HDFS path
+```bash
+hadoop fs -chmod -R 1777 {schema_location}
+# All files or directories created in this directory will belong to the group that owns the directory. 
+# There should be an hdfs command update. 
+```
 check the list of jobs
 ```bash
 yarn application -list
