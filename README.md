@@ -17,9 +17,13 @@ submit job via a direct query
 ```bash
 nohup hive -e 'set some_settings=true; select some_columns from some_tables;' > query.log &
 ```
-check data files on HDFS
+display data files on HDFS with formating file sizes in a 'human-readable' fashion (e.b 64 M instead of 67108864)
 ```bash
 hdfs dfs -du -h {table_location}
+```
+display data files on HDFS with showing the names of columns as a header line
+```bash
+hdfs dfs -du -v {table_location}
 ```
 remove data files on HDFS
 ```bash
