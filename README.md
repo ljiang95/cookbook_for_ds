@@ -24,7 +24,7 @@ hdfs dfs -du -h {table_location}
 display data files on HDFS with showing the names of columns as a header line
 ```bash
 hdfs dfs -du -v {table_location}
-# In most of the cases, the first column shows the size of the data files and the second column shows the disk space consumed with all replicas. 
+# In most of the cases, the first column shows the size of the data files, the second column shows the disk space consumed with all replicas, and the third column shows the full path name. 
 ```
 remove data files on HDFS
 ```bash
