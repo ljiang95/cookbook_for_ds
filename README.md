@@ -68,6 +68,13 @@ create database {schema_name} {schema_location}
 ```
 
 
+## Trino
+display all columns and respective data types
+```trino
+show columns from {table_name}
+```
+
+
 ## General Linux Bash
 display running process
 ```bash
